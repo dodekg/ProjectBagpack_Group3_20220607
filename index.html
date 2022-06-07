@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Backpack</title>
+    <link rel="stylesheet" href="./dist/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/02601eb685.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="top-0 left-0 mx-auto font-header z-50 px-6  bg-main border-b-2 border-white" id="navbar">
+        <div class="flex items-center md:justify-evenly justify-between">
+            <div class="p-2">
+                <a href="#"><img class="max-h-15 max-w-[200px]" src="./src/images/logo-backpack.png" alt="Logo"></a>
+            </div>
+            <div
+                class="flex absolute text-center right-0 left-0 top-20 md:static bg-main  flex-col  md:flex-row md:space-x-10 md:py-6 text-1xl nav-links text-black font-semibold">
+
+                <a href="#"
+                    class="link-item my-1 transition-colors text-black bg-white py-1 px-3 md:rounded-md ">Home</a>
+                <a href="#" class="link-item my-1 transition-colors px-3 py-1   hover:text-white ">About
+                    us</a>
+                <a href="#" class="link-item my-1 transition-colors px-3 py-1   hover:text-white ">Design</a>
+                <a href="#" class="link-item my-1 transition-colors px-3 py-1  hover:text-white ">Pricing</a>
+                <a href="#" class="link-item my-1 transition-colors px-3 py-1  hover:text-white ">Contact
+                    us</a>
+            </div>
+            <div class="md:hidden text-4xl text-tertiary cursor-pointer controls">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times hidden" style="display: none;"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home"
+        class="bg-white text-black min-h-[90vh] my-15 relative flex items-center py-15 justify-center flex-wrap">
+        <div class="left flex justify-center flex-1 flex-wrap flex-col mx-5 my-5 ">
+            <h1 class="font-header font-bold text-6xl mx-auto animate__fadeIn  animate__slow animated ">Lorem ipsum
+                dolor
+                sit</h1>
+            <h2 class="my-4 text-xl max-w-[35rem] text-left mx-auto animate__fadeIn  animate__slow animated ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+            </h2>
+            <div class=" max-w-[35rem] w-[100%] mx-auto px-8 animate__fadeIn  animate__slow animated ">
+                <a href="#"
+                    class="btn hover:scale-110 transition-all btn-secondary py-1 px-4 float-right text-lg rounded-md bg-main text-white font-semibold mb-4"
+                    id="explorebtn">Explore</a>
+
+            </div>
+        </div>
+        <div class="right flex-1 items-center justify-center animate__fadeIn animated animate__delay-1s animate__slow ">
+            <!-- <video loop controls autoplay muted id="video">
+                <source src="./src/images/hero-video.mov" type="video/mp4">
+                <source src="./src/images/hero-video.mov" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <script>
+                document.getElementById('video').play();
+            </script> -->
+            <!--<img class="mx-auto max-w-[25rem] " src="./src/images/hero.png" alt="Hero image" title="Hero image">-->
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/9iTJIuFkYOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <img class="absolute bottom-[-4rem] left-0" src="./src/images/divider-1.png" alt="Divider image">
+    </section>
+
+    <!-- About -->
+    <section id="about"
+        class="bg-main  text-white min-h-[90vh] py-10 relative mt-16 flex flex-col items-center justify-around px-2">
+
+        <h2 class=" text-5xl sm:text-6xl font-header  animated ">Backpack features</h2>
+        <h3 class="max-w-[35rem] text-center py-7  animated ">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do
+            eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+        </h3>
+        <div class="flex flex-col sm:flex-row mb-24">
+
+            <div class="flex-wrap flex-1 ">
+
+                <div class="flex py-4 items-center justify-center animatedUp animate__slow">
+                    <div>
+                        <i class="fa-solid fa-bookmark   fa-fw text-3xl lg:text-4xl"></i> </div>
+                    <div>
+                        <h4 class="font-header text-2xl sm:text-xl  lg:text-2xl">Lorem ipsum title</h4>
+                        <p class="max-w-[17.5rem] sm:max-w-[20rem] text-base sm:text-sm">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit, sed
+                            do.</p>
+                    </div>
+                </div>
+                <div class="flex py-4 items-center justify-center animatedUp animate__slow">
+                    <div>
+                        <i class="fa-solid fa-bookmark   fa-fw text-3xl lg:text-4xl"></i> </div>
+                    <div>
+                        <h4 class="font-header text-2xl sm:text-xl  lg:text-2xl">Lorem ipsum title</h4>
+                        <p class="max-w-[17.5rem] sm:max-w-[20rem] text-base sm:text-sm">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit, sed
+                            do.</p>
+                    </div>
+                </div>
+                <div class="flex py-4 items-center justify-center animatedUp animate__slow">
+                    <div>
+                        <i class="fa-solid fa-bookmark   fa-fw text-3xl lg:text-4xl"></i> </div>
+                    <div>
+                        <h4 class="font-header text-2xl sm:text-xl  lg:text-2xl">Lorem ipsum title</h4>
+                        <p class="max-w-[17.5rem] sm:max-w-[20rem] text-base sm:text-sm">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit, sed
+                            do.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mid flex-1 flex-col mx-2 mid flex-wrap justify-center items-center">
+
+                <div class="flex justify-center items-center animatedUp animate__slow h-full"><img class=""
+                        src="./src/images/BAG-DRAW.jpg" alt="About image"></div>
+            </div>
+            <div class="flex-wrap flex-1 ">
+
+                <div class="flex py-4 items-center justify-center animatedUp animate__slow">
+                    <div>
+                        <i class="fa-solid fa-bookmark   fa-fw text-3xl lg:text-4xl"></i> </div>
+                    <div>
+                        <h4 class="font-header text-2xl sm:text-xl  lg:text-2xl">Lorem ipsum title</h4>
+                        <p class="max-w-[17.5rem] sm:max-w-[20rem] text-base sm:text-sm">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit, sed
+                            do.</p>
+                    </div>
+                </div>
+                <div class="flex py-4 items-center justify-center animatedUp animate__slow">
+                    <div>
+                        <i class="fa-solid fa-bookmark   fa-fw text-3xl lg:text-4xl"></i> </div>
+                    <div>
+                        <h4 class="font-header text-2xl sm:text-xl  lg:text-2xl">Lorem ipsum title</h4>
+                        <p class="max-w-[17.5rem] sm:max-w-[20rem] text-base sm:text-sm">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit, sed
+                            do.</p>
+                    </div>
+                </div>
+                <div class="flex py-4 items-center justify-center animatedUp animate__slow">
+                    <div>
+                        <i class="fa-solid fa-bookmark   fa-fw text-3xl lg:text-4xl"></i> </div>
+                    <div>
+                        <h4 class="font-header text-2xl sm:text-xl  lg:text-2xl">Lorem ipsum title</h4>
+                        <p class="max-w-[17.5rem] sm:max-w-[20rem] text-base sm:text-sm">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit, sed
+                            do.</p>
+                    </div>
+                </div>
+            </div>
+
+            <img class="absolute bottom-[-.4rem] sm:bottom-[-.8rem] lg:bottom-[-1rem] left-0 w-[100%] "
+                src="./src/images/divider-2.png" alt="Divider image">
+
+    </section>
+
+    <!-- About pt2 -->
+    <section id="about-2"
+        class=" text-white bg-secondary relative min-h-[35vh] pt-10 pb-16 sm:pb-10 md:pb-16 lg:pb-48 px-2">
+
+        <!-- <div class="flex items-center justify-center gap-x-10">
+            <div class="flex-1 flex flex-col max-w-[300px] bg-main p-5 items-center justify-center ">
+                <i class="fa-solid fa-bookmark  text-secondary fa-fw text-6xl"></i>
+
+                <h4 class="text-2xl text-secondary text-center font-semibold">Title</h4>
+                <p class="text-center text-base font-light">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. sed do sed do
+                </p>
+            </div>
+            <div class="flex-1 flex flex-col max-w-[300px] bg-main p-5 items-center justify-center ">
+                <i class="fa-solid fa-bookmark  text-secondary fa-fw text-6xl"></i>
+
+                <h4 class="text-2xl text-secondary text-center font-semibold">Title</h4>
+                <p class="text-center text-base font-light">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. sed do sed do
+                </p>
+            </div>
+            <div class="flex-1 flex flex-col max-w-[300px] bg-main p-5 items-center justify-center ">
+                <i class="fa-solid fa-bookmark  text-secondary fa-fw text-6xl"></i>
+
+                <h4 class="text-2xl text-secondary text-center font-semibold">Title</h4>
+                <p class="text-center text-base font-light">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. sed do sed do
+                </p>
+            </div>
+            <div class="flex-1 flex flex-col max-w-[300px] bg-main p-5 items-center justify-center ">
+                <i class="fa-solid fa-bookmark  text-secondary fa-fw text-6xl"></i>
+
+                <h4 class="text-2xl text-secondary text-center font-semibold">Title</h4>
+                <p class="text-center text-base font-light">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. sed do sed do
+                </p>
+            </div>
+        </div> -->
+        <h2 class="text-4xl sm:text-5xl md:text-6xl font-header text-center animated">#projectbackpack</h2>
+        <h3 class=" text-2xl sm:text-3xl text-center pb-7 animated">Join the family!
+        </h3>
+
+        <div
+            class="row flex flex-col sm:flex-row justify-center items-center gap-y-4 sm:gap-y-0 sm:gap-x-5 lg:gap-x-10 ">
+            <div class="w-[250px] h-[250px] cursor-pointer animatedUp animate__faster ">
+                <img class="w-[100%]" src="./src/images/holly-mandarich-UVyOfX3v0Ls-unsplash-2.jpg" alt="Social image">
+            </div>
+            <div class="w-[250px] h-[250px] cursor-pointer animatedUp delay-1 animate__faster">
+                <img class="w-[100%]" src="./src/images/bayu-setiawan-ccnh25VfkHM-unsplash-1.jpg" alt="Social image">
+            </div>
+            <div class="w-[250px] h-[250px] cursor-pointer animatedUp delay-2 animate__faster">
+                <img class="w-[100%]" src="./src/images/ibrahim-rifath-Y6tBl0pTe-g-unsplash-1.jpg" alt="Social image">
+            </div>
+            <div class="w-[250px] h-[250px] cursor-pointer animatedUp delay-3 animate__faster">
+                <img class="w-[100%]" src="./src/images/guilherme-stecanella-_dH-oQF9w-Y-unsplash-1.jpg" alt="Social image">
+            </div>
+        </div>
+
+        <img class="absolute bottom-[-.4rem] sm:bottom-[-.8rem] lg:bottom-[-1rem]  left-0 w-[100%]"
+            src="./src/images/divider-3.png" alt="Divider image">
+
+    </section>
+
+    <!-- Showcase -->
+
+    <section id="showcase" class="py-4 lg:py-16 bg-main text-white flex justify-center items-center flex-col ">
+
+        <h2 class="text-4xl sm:text-5xl md:text-6xl font-header text-center px-2">Explore products</h2>
+        <h3 class="max-w-[35rem] text-center py-7 px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+        </h3>
+        <div
+            class="showcase flex py-14 bg-white text-main text-center w-full items-center justify-center gap-x-5 lg:gap-x-14 px-2 flex-wrap lg:flex-nowrap gap-y-2">
+            <div class="showcase-item">
+                <img src="./src/images/BAG-base.jpg" alt="Showcase Image">
+                <h3 class="font-semibold text-3xl pt-2">Name</h3>
+            </div>
+            <div class="showcase-item">
+                <img src="./src/images/top.jpg" alt="Showcase Image">
+                <h3 class="font-semibold text-3xl pt-2">Name</h3>
+            </div>
+            <div class="showcase-item">
+                <img src="./src/images/Side.jpg" alt="Showcase Image">
+                <h3 class="font-semibold text-3xl pt-2">Name</h3>
+            </div>
+            <div class="showcase-item">
+                <img src="./src/images/bottom.jpg" alt="Showcase Image">
+                <h3 class="font-semibold text-3xl pt-2">Name</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing starts -->
+
+    <section id="pricing" class="py-9 bg-main text-white  px-2 ">
+
+        <div class="wrapper flex flex-col sm:flex-row justify-center max-w-[1200px] mx-auto flex-wrap">
+            <div
+                class="mid flex-1 flex-col mr-2 mid flex-wrap justify-center items-center order-2 sm:order-1 mt-4 sm:mt-0">
+                <div class="flex justify-center items-center h-full"><img class="" src="./src/images/BUNDLES.jpg"
+                        alt="About image"></div>
+            </div>
+            <div class="flex-1 flex flex-col items-center  justify-around order-1 sm:order-2 ">
+                <h2 class="text-5xl font-header text-center">Get started</h2>
+                <h3 class="max-w-[35rem] text-center py-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do
+                    eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.
+                </h3>
+                <ul class="list-disc mr-auto ml-12 md:ml-16 lg:ml-20 mb-4	">
+                    <li>Something</li>
+                    <li>Something</li>
+                    <li>Something</li>
+                    <li>Something</li>
+                </ul>
+                <a href="#"
+                    class="btn btn-secondary hover:scale-110 transition-all py-1 px-4 float-right text-lg rounded-md bg-white text-main font-semibold ">Order
+                    now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact" class="flex items-center justify-center flex-col py-10 bg-secondary text-main px-2">
+
+        <h2 class="text-6xl font-header font-semibold">Any enquiries?</h2>
+        <h3 class="max-w-[35rem] text-center py-5">No problem, lorem ipsum
+        </h3>
+
+        <form action="/success/" class=" flex flex-col   w-full max-w-[30rem]" name="contact" method="POST"
+            data-netlify="true" onSubmit="submit">
+            <div class="relative z-0 mb-6 w-full group  ">
+                <input type="text" name="first_name" id="first_name" class="block py-2.5 px-2 w-full text-sm 
+                text-white bg-transparent border-2 rounded-md
+                 border-main
+                 dark:border-gray-white 
+             focus:outline-none focus:ring-0 
+                 focus:border-white peer" placeholder=" " required />
+                <label for="first_name" class="absolute text-sm text-main duration-300 
+                transform -translate-y-9 scale-75 top-3 left-2 -z-10 origin-[0] 
+                peer-focus:left-0 peer-focus:text-main 
+                peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 
+                peer-focus:scale-75 peer-focus:-translate-y-9 ">First Name
+
+                </label>
+            </div>
+            <div class="relative z-0 mb-6 w-full group">
+                <input type="text" name="email-input" id="email-input" class="block py-2.5 px-2 w-full text-sm 
+                text-white bg-transparent border-2 rounded-md
+                 border-main
+                 dark:border-gray-white 
+             focus:outline-none focus:ring-0 
+                 focus:border-white peer" placeholder=" " required />
+                <label for="first_name" class="absolute text-sm text-main duration-300 
+                transform -translate-y-9 scale-75 top-3 left-2 -z-10 origin-[0] 
+                peer-focus:left-0 peer-focus:text-main 
+                peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 
+                peer-focus:scale-75 peer-focus:-translate-y-9">Email Address
+                </label>
+            </div>
+
+            <div class="relative z-0 mb-6 w-full group">
+                <textarea name="text-input" id="text-input" rows="7" class="block p-1   w-full text-sm 
+                text-white bg-transparent resize-none border-2
+                 border-main appearance-none
+                 focus:outline-none focus:ring-0 
+                 focus:border-white peer" placeholder=" " required> </textarea>
+                <label for="text-input" class="absolute text-sm text-main 
+                transform -translate-y-6 scale-75 top-1 -z-10 origin-[0]  px-2 
+                peer-focus:left-0 peer-focus:text-main
+                peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 
+                peer-focus:scale-75 peer-focus:-translate-y-6">Your message
+                </label>
+            </div>
+
+            <fieldset>
+                <legend class="sr-only">Checkbox variants</legend>
+                <div class="flex items-center mb-4">
+                    <input id="checkbox-1" type="checkbox"
+                        class="w-4 accent-main h-4 text-blue-main bg-gray-100 rounded border-gray-300 focus:ring-main dark:focus:ring-main  focus:ring-2"
+                        checked>
+                    <label for="checkbox-1" class="ml-3 text-sm font-medium text-white ">I
+                        agree to the <a
+                            href="https://www.freeprivacypolicy.com/live/7a8dd4c2-57c7-4c54-a46b-ef204b99633e"
+                            class="text-main hover:underline" target="_blank">terms
+                            and conditions</a></label>
+                </div>
+            </fieldset>
+
+            <button type="submit"
+                class="float-right   border-2 border-main transition-all py-1  text-secondary hover:text-white max-w-[8rem] inline-block bg-main  hover:bg-secondary hover:border-main focus:ring-4 focus:outline-none  font-medium rounded-lg  w-full sm:w-auto px-5  text-center ">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="footer" class="bg-main text-tertiary font-semibold  px-2 py-4 sm:p-5">
+        <div class="wrapper flex items-center justify-between max-w-[1350px] mx-auto flex-col sm:flex-row ">
+            <div class="order-2 sm:order-1 flex flex-col justify-center items-center">
+                <div>
+                    <h4 class="uppercase">Project backpack</h4>
+                    <p>+1 202 555 0156</p>
+                    <p>EH3 4KJ 24/A Example Street</p>
+                </div>
+                <div class="socials flex space-x-4 text-2xl mt-4 ">
+                    <i class="fa-brands fa-facebook cursor-pointer hover:scale-125 transition-all"></i>
+                    <i class="fa-brands  fa-youtube cursor-pointer hover:scale-125 transition-all"></i>
+                    <i class="fa-brands  fa-instagram cursor-pointer hover:scale-125 transition-all"></i>
+                    <i class="fa-brands  fa-twitter cursor-pointer hover:scale-125 transition-all"></i>
+                </div>
+            </div>
+            <div class="order-1 sm:order-2 m-2">
+                <h5>Join our newsletter for offers:</h5>
+                <div>
+                    <form action="/success/" name="newsletter" method="POST" data-netlify="true" onSubmit="submit"
+                        class="flex py-1 items-center">
+                        <input type="email" class="
+                form-control
+                block
+                w-75
+                px-2
+                py-1
+                text-sm
+                font-normal
+                text-gray-700
+                bg-white bg-clip-padding
+                transition
+                ease-in-out
+                m-0
+                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+              " placeholder="Email address" name="email-newsletter" id="email-newsletter" />
+                        <button type="submit" id="newsletter-btn"
+                            class="border-l-2 border-main border-solid block px-2 py-1 bg-secondary text-main font-poppins text-sm font-bold transition-all hover:bg-white hover:text-tertiary ">subscribe</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script type="module">
+        //Click on navbars
+        import jump from "../node_modules/jump.js/dist/jump.module.js";
+
+        const navlinks = document.querySelectorAll('.link-item');
+
+        const home = document.querySelector('#home');
+        const about = document.querySelector('#about');
+        const showcase = document.querySelector('#showcase');
+        const pricing = document.querySelector('#pricing');
+        const contact = document.querySelector('#contact');
+
+        const sections = [home,about,showcase,pricing,contact];
+
+
+        navlinks.forEach((item, index) => {
+            item.addEventListener('click', (e)=>{
+                e.preventDefault();
+                jump(sections[index]);
+            })
+        });
+
+        const exploreBtn = document.querySelector('#explorebtn');
+        
+        exploreBtn.addEventListener('click', (e)=>{
+            e.preventDefault();
+            jump(about);
+        })
+
+    </script>
+    <script src="./src/app.js"></script>
+    <script src="./src/animations.js"></script>
+</body>
+
+</html>

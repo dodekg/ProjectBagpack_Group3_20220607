@@ -1,0 +1,26 @@
+{
+  "name": "project-bagpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./dist/main.css",
+    "watch": "tailwindcss -i ./input.css -o ./dist/main.css  --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iambariz/Project-Bagpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iambariz/Project-Bagpack/issues"
+  },
+  "homepage": "https://github.com/iambariz/Project-Bagpack#readme",
+  "dependencies": {
+    "jump.js": "^1.0.2"
+  },
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}

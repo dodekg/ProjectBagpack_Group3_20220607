@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animated {
+	opacity: 0;
+}
+
+.animatedUp {
+	opacity: 0;
+}
+
+.delay-1 {
+	animation-delay: 0.15s;
+}
+.delay-2 {
+	animation-delay: 0.3s;
+}
+.delay-3 {
+	animation-delay: 0.45s;
+}
